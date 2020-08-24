@@ -1,0 +1,439 @@
+ INFO [main] (Cooja.java:1316) - > Starting Cooja
+ INFO [main] (Cooja.java:2857) - External tools default settings: /external_tools_linux.config
+ WARN [main] (Cooja.java:2889) - Error when reading user settings from: /home/user/.cooja.user.properties
+ INFO [main] (Simulation.java:422) - Simulation random seed: 1
+ INFO [main] (CompileContiki.java:140) - > make TARGET=cooja clean 
+Message:
+Message:> make TARGET=cooja clean 
+Message:Target cooja cleaned
+ INFO [main] (CompileContiki.java:140) - > make -j sender-node.cooja TARGET=cooja 
+Message:
+Message:> make -j sender-node.cooja TARGET=cooja 
+Message:  CC        sender-node.c
+Message:  MKDIR     build/cooja/obj
+Message:  CC        ../../../arch/platform/cooja/./platform.c
+Message:  CC        ../../../arch/platform/cooja/sys/cooja_mt.c
+Message:  CC        ../../../arch/platform/cooja/./rtimer-arch.c
+Message:  CC        ../../../os/dev/slip.c
+Message:  CC        ../../../arch/platform/cooja/dev/watchdog.c
+Message:  CC        ../../../arch/platform/cooja/dev/leds-arch.c
+Message:  CC        ../../../arch/platform/cooja/dev/ip.c
+Message:  CC        ../../../arch/platform/cooja/./slip-arch.c
+Message:  CC        ../../../os/lib/random.c
+Message:  CC        ../../../os/lib/sensors.c
+Message:  CC        ../../../arch/platform/cooja/./int-master.c
+Message:  CC        ../../../arch/platform/cooja/dev/gpio-hal-arch.c
+Message:  CC        ../../../arch/platform/cooja/dev/vib-sensor.c
+Message:  CC        ../../../arch/platform/cooja/dev/beep.c
+Message:  CC        ../../../arch/platform/cooja/dev/buttons.c
+Message:  CC        ../../../arch/platform/cooja/dev/rs232.c
+Message:  CC        ../../../os/dev/leds.c
+Message:  CC        ../../../arch/platform/cooja/dev/pir-sensor.c
+Message:  CC        ../../../arch/platform/cooja/cfs/cfs-cooja.c
+Message:  CC        ../../../arch/platform/cooja/dev/moteid.c
+Message:  CC        ../../../arch/platform/cooja/sys/clock.c
+Message:  CC        ../../../arch/platform/cooja/sys/cooja-log.c
+Message:  CC        ../../../arch/platform/cooja/sys/cooja_mtarch.c
+Message:  CC        ../../../arch/platform/cooja/dev/cooja-radio.c
+Message:  CC        ../../../arch/platform/cooja/lib/simEnvChange.c
+Message:  CC        ../../../os/contiki-main.c
+Message:  CC        ../../../arch/platform/cooja/dev/eeprom.c
+Message:  CC        ../../../os/sys/mutex.c
+Message:  CC        ../../../os/sys/log.c
+Message:  CC        ../../../os/lib/ifft.c
+Message:  CC        ../../../os/sys/timer.c
+Message:  CC        ../../../os/sys/stimer.c
+Message:  CC        ../../../os/sys/stack-check.c
+Message:  CC        ../../../os/lib/crc16.c
+Message:  CC        ../../../os/lib/trickle-timer.c
+Message:  CC        ../../../os/lib/dbl-list.c
+Message:  CC        ../../../os/lib/list.c
+Message:  CC        ../../../os/lib/aes-128.c
+Message:  CC        ../../../os/lib/ringbufindex.c
+Message:  CC        ../../../os/lib/ccm-star.c
+Message:  CC        ../../../os/lib/dbl-circ-list.c
+Message:  CC        ../../../os/lib/circular-list.c
+Message:  CC        ../../../os/lib/hexconv.c
+Message:  CC        ../../../os/lib/assert.c
+Message:  CC        ../../../os/sys/process.c
+Message:  CC        ../../../os/dev/gpio-hal.c
+Message:  CC        ../../../os/sys/energest.c
+Message:  CC        ../../../os/net/queuebuf.c
+Message:  CC        ../../../os/net/linkaddr.c
+Message:  CC        ../../../os/net/mac/framer/frame802154e-ie.c
+Message:  CC        ../../../os/net/mac/framer/framer-802154.c
+Message:  CC        ../../../os/sys/etimer.c
+Message:  CC        ../../../os/lib/memb.c
+Message:  CC        ../../../os/sys/ctimer.c
+Message:  CC        ../../../os/net/netstack.c
+Message:  CC        ../../../os/net/mac/csma/ccm-star-packetbuf.c
+Message:  CC        ../../../os/net/mac/csma/csma-security.c
+Message:  CC        ../../../os/net/ipv6/uipbuf.c
+Message:  CC        ../../../os/net/mac/csma/anti-replay.c
+Message:  CC        ../../../os/net/ipv6/uip-ds6.c
+Message:  CC        ../../../os/net/ipv6/ip64-addr.c
+Message:  CC        ../../../os/net/ipv6/uip-udp-packet.c
+Message:  CC        ../../../os/net/ipv6/uip-ds6-route.c
+Message:  CC        ../../../os/net/ipv6/uip-ds6-nbr.c
+Message:  CC        ../../../os/net/ipv6/uip-nameserver.c
+Message:  CC        ../../../os/net/ipv6/uip-nd6.c
+Message:  CC        ../../../os/net/ipv6/psock.c
+Message:  CC        ../../../os/sys/rtimer.c
+Message:  CC        ../../../os/net/mac/framer/frame802154.c
+Message:  CC        ../../../os/sys/node-id.c
+Message:  CC        ../../../os/sys/atomic.c
+Message:  CC        ../../../os/dev/nullradio.c
+Message:  CC        ../../../os/net/mac/mac-sequence.c
+Message:  CC        ../../../os/net/mac/mac.c
+Message:  CC        ../../../os/dev/serial-line.c
+Message:  CC        ../../../os/net/net-debug.c
+Message:  CC        ../../../os/lib/heapmem.c
+Message:  CC        ../../../os/net/link-stats.c
+Message:  CC        ../../../os/dev/button-hal.c
+Message:  CC        ../../../os/lib/ringbuf.c
+Message:  CC        ../../../os/net/nbr-table.c
+Message:  CC        ../../../os/net/ipv6/uip-icmp6.c
+Message:  CC        ../../../os/net/ipv6/sicslowpan.c
+Message:  CC        ../../../os/net/packetbuf.c
+Message:  CC        ../../../os/net/ipv6/uiplib.c
+Message:  CC        ../../../os/net/ipv6/uip-sr.c
+Message:  CC        ../../../os/net/ipv6/tcp-socket.c
+Message:  CC        ../../../os/sys/compower.c
+Message:  CC        ../../../os/net/mac/csma/csma-output.c
+Message:  CC        ../../../os/dev/spi.c
+Message:  CC        ../../../os/sys/autostart.c
+Message:  CC        ../../../os/net/ipv6/simple-udp.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-ext-header.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-of0.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-icmp6.c
+Message:  CC        ../../../os/net/ipv6/tcpip.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-nbr-policy.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-mrhof.c
+Message:  CC        ../../../os/net/ipv6/uip6.c
+Message:  CC        ../../../os/net/mac/csma/csma.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-dag-root.c
+Message:  CC        ../../../os/net/mac/framer/nullframer.c
+Message:  CC        ../../../os/net/ipv6/uip-packetqueue.c
+Message:  CC        ../../../os/net/ipv6/udp-socket.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-timers.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-neighbor.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-dag.c
+Message:mv platform.o build/cooja/mtype8.o
+Message:ar rcf build/cooja/mtype8.a build/cooja/obj/simEnvChange.o build/cooja/obj/cooja_mt.o build/cooja/obj/cooja_mtarch.o build/cooja/obj/rtimer-arch.o build/cooja/obj/slip.o build/cooja/obj/watchdog.o build/cooja/obj/int-master.o build/cooja/obj/beep.o build/cooja/obj/ip.o build/cooja/obj/leds-arch.o build/cooja/obj/moteid.o build/cooja/obj/pir-sensor.o build/cooja/obj/rs232.o build/cooja/obj/vib-sensor.o build/cooja/obj/clock.o build/cooja/obj/cooja-log.o build/cooja/obj/cfs-cooja.o build/cooja/obj/cooja-radio.o build/cooja/obj/eeprom.o build/cooja/obj/slip-arch.o build/cooja/obj/random.o build/cooja/obj/sensors.o build/cooja/obj/leds.o build/cooja/obj/gpio-hal-arch.o build/cooja/obj/buttons.o build/cooja/obj/contiki-main.o build/cooja/obj/autostart.o build/cooja/obj/ctimer.o build/cooja/obj/energest.o build/cooja/obj/etimer.o build/cooja/obj/log.o build/cooja/obj/mutex.o build/cooja/obj/stimer.o build/cooja/obj/compower.o build/cooja/obj/atomic.o build/cooja/obj/rtimer.o build/cooja/obj/node-id.o build/cooja/obj/process.o build/cooja/obj/timer.o build/cooja/obj/stack-check.o build/cooja/obj/dbl-circ-list.o build/cooja/obj/crc16.o build/cooja/obj/ifft.o build/cooja/obj/trickle-timer.o build/cooja/obj/ccm-star.o build/cooja/obj/dbl-list.o build/cooja/obj/ringbufindex.o build/cooja/obj/list.o build/cooja/obj/circular-list.o build/cooja/obj/aes-128.o build/cooja/obj/memb.o build/cooja/obj/heapmem.o build/cooja/obj/hexconv.o build/cooja/obj/assert.o build/cooja/obj/ringbuf.o build/cooja/obj/button-hal.o build/cooja/obj/serial-line.o build/cooja/obj/spi.o build/cooja/obj/nullradio.o build/cooja/obj/gpio-hal.o build/cooja/obj/queuebuf.o build/cooja/obj/nbr-table.o build/cooja/obj/packetbuf.o build/cooja/obj/netstack.o build/cooja/obj/linkaddr.o build/cooja/obj/net-debug.o build/cooja/obj/link-stats.o build/cooja/obj/mac-sequence.o build/cooja/obj/mac.o build/cooja/obj/frame802154e-ie.o build/cooja/obj/framer-802154.o build/cooja/obj/nullframer.o build/cooja/obj/frame802154.o build/cooja/obj/csma-security.o build/cooja/obj/anti-replay.o build/cooja/obj/csma.o build/cooja/obj/csma-output.o build/cooja/obj/ccm-star-packetbuf.o build/cooja/obj/uipbuf.o build/cooja/obj/uip-icmp6.o build/cooja/obj/uip-sr.o build/cooja/obj/uip-ds6.o build/cooja/obj/uip-packetqueue.o build/cooja/obj/tcp-socket.o build/cooja/obj/ip64-addr.o build/cooja/obj/uip-udp-packet.o build/cooja/obj/uip-ds6-route.o build/cooja/obj/psock.o build/cooja/obj/tcpip.o build/cooja/obj/uip6.o build/cooja/obj/uip-ds6-nbr.o build/cooja/obj/uip-nameserver.o build/cooja/obj/uip-nd6.o build/cooja/obj/udp-socket.o build/cooja/obj/simple-udp.o build/cooja/obj/sicslowpan.o build/cooja/obj/uiplib.o build/cooja/obj/rpl-icmp6.o build/cooja/obj/rpl-of0.o build/cooja/obj/rpl-neighbor.o build/cooja/obj/rpl-dag.o build/cooja/obj/rpl-timers.o build/cooja/obj/rpl-ext-header.o build/cooja/obj/rpl.o build/cooja/obj/rpl-nbr-policy.o build/cooja/obj/rpl-mrhof.o build/cooja/obj/rpl-dag-root.o 
+Message:Redefining printf
+Message:objcopy --redefine-sym printf=log_printf sender-node.o;   objcopy --redefine-sym printf=log_printf build/cooja/mtype8.o;   objcopy --redefine-sym printf=log_printf build/cooja/mtype8.a; 
+Message:objcopy --redefine-sym puts=log_puts sender-node.o;   objcopy --redefine-sym puts=log_puts build/cooja/mtype8.o;   objcopy --redefine-sym puts=log_puts build/cooja/mtype8.a; 
+Message:objcopy --redefine-sym putchar=log_putchar sender-node.o;   objcopy --redefine-sym putchar=log_putchar build/cooja/mtype8.o;   objcopy --redefine-sym putchar=log_putchar build/cooja/mtype8.a; 
+Message:gcc -I'/usr/lib/jvm/default-java/include' -I'/usr/lib/jvm/default-java/include/linux' -shared -Wl,-Map=build/cooja/mtype8.map -o build/cooja/mtype8.cooja sender-node.o build/cooja/mtype8.o build/cooja/mtype8.a 
+Message:cp build/cooja/mtype8.cooja sender-node.cooja
+Message:rm sender-node.o
+ INFO [main] (ContikiMoteType.java:406) - Creating core communicator between Java class Lib1 and Contiki library '/home/user/contiki-ng/tests/14-rpl-lite/code/build/cooja/mtype8.cooja'
+ INFO [main] (ContikiMoteType.java:580) - Parsed section at 0x31020 ( 900 == 0x384 bytes)
+ INFO [main] (ContikiMoteType.java:580) - Parsed section at 0x313c0 ( 81156 == 0x13d04 bytes)
+ INFO [main] (ContikiMoteType.java:502) - mtype8.cooja: offsetting Cooja mote address space: 0xa5518000
+ INFO [main] (ContikiMoteType.java:580) - Parsed section at 0xa5549020 ( 900 == 0x384 bytes)
+ INFO [main] (ContikiMoteType.java:580) - Parsed section at 0xa55493c0 ( 81156 == 0x13d04 bytes)
+ INFO [main] (CompileContiki.java:140) - > make TARGET=cooja clean 
+Message:
+Message:> make TARGET=cooja clean 
+Message:Target cooja cleaned
+ INFO [main] (CompileContiki.java:140) - > make -j root-node.cooja TARGET=cooja 
+Message:
+Message:> make -j root-node.cooja TARGET=cooja 
+Message:  CC        root-node.c
+Message:  MKDIR     build/cooja/obj
+Message:  CC        ../../../arch/platform/cooja/./platform.c
+Message:  CC        ../../../arch/platform/cooja/./rtimer-arch.c
+Message:  CC        ../../../os/dev/slip.c
+Message:  CC        ../../../arch/platform/cooja/./int-master.c
+Message:  CC        ../../../arch/platform/cooja/dev/watchdog.c
+Message:  CC        ../../../arch/platform/cooja/sys/cooja-log.c
+Message:  CC        ../../../arch/platform/cooja/dev/beep.c
+Message:  CC        ../../../arch/platform/cooja/dev/ip.c
+Message:  CC        ../../../arch/platform/cooja/sys/clock.c
+Message:  CC        ../../../arch/platform/cooja/./slip-arch.c
+Message:  CC        ../../../arch/platform/cooja/dev/moteid.c
+Message:  CC        ../../../arch/platform/cooja/dev/rs232.c
+Message:  CC        ../../../arch/platform/cooja/dev/cooja-radio.c
+Message:  CC        ../../../arch/platform/cooja/sys/cooja_mtarch.c
+Message:  CC        ../../../arch/platform/cooja/cfs/cfs-cooja.c
+Message:  CC        ../../../arch/platform/cooja/sys/cooja_mt.c
+Message:  CC        ../../../arch/platform/cooja/dev/eeprom.c
+Message:  CC        ../../../os/sys/energest.c
+Message:  CC        ../../../arch/platform/cooja/dev/leds-arch.c
+Message:  CC        ../../../arch/platform/cooja/dev/pir-sensor.c
+Message:  CC        ../../../arch/platform/cooja/dev/vib-sensor.c
+Message:  CC        ../../../os/sys/process.c
+Message:  CC        ../../../os/sys/rtimer.c
+Message:  CC        ../../../os/sys/node-id.c
+Message:  CC        ../../../os/dev/leds.c
+Message:  CC        ../../../arch/platform/cooja/dev/gpio-hal-arch.c
+Message:  CC        ../../../arch/platform/cooja/dev/buttons.c
+Message:  CC        ../../../os/sys/autostart.c
+Message:  CC        ../../../os/contiki-main.c
+Message:  CC        ../../../os/lib/random.c
+Message:  CC        ../../../os/lib/sensors.c
+Message:  CC        ../../../os/sys/etimer.c
+Message:  CC        ../../../os/sys/ctimer.c
+Message:  CC        ../../../os/sys/log.c
+Message:  CC        ../../../os/sys/mutex.c
+Message:  CC        ../../../arch/platform/cooja/lib/simEnvChange.c
+Message:  CC        ../../../os/sys/stimer.c
+Message:  CC        ../../../os/sys/compower.c
+Message:  CC        ../../../os/sys/atomic.c
+Message:  CC        ../../../os/sys/timer.c
+Message:  CC        ../../../os/lib/crc16.c
+Message:  CC        ../../../os/lib/dbl-circ-list.c
+Message:  CC        ../../../os/lib/trickle-timer.c
+Message:  CC        ../../../os/sys/stack-check.c
+Message:  CC        ../../../os/lib/ccm-star.c
+Message:  CC        ../../../os/lib/ifft.c
+Message:  CC        ../../../os/lib/circular-list.c
+Message:  CC        ../../../os/lib/hexconv.c
+Message:  CC        ../../../os/lib/heapmem.c
+Message:  CC        ../../../os/lib/ringbufindex.c
+Message:  CC        ../../../os/lib/memb.c
+Message:  CC        ../../../os/lib/list.c
+Message:  CC        ../../../os/lib/aes-128.c
+Message:  CC        ../../../os/lib/dbl-list.c
+Message:  CC        ../../../os/dev/spi.c
+Message:  CC        ../../../os/dev/button-hal.c
+Message:  CC        ../../../os/dev/serial-line.c
+Message:  CC        ../../../os/lib/ringbuf.c
+Message:  CC        ../../../os/lib/assert.c
+Message:  CC        ../../../os/dev/nullradio.c
+Message:  CC        ../../../os/dev/gpio-hal.c
+Message:  CC        ../../../os/net/queuebuf.c
+Message:  CC        ../../../os/net/nbr-table.c
+Message:  CC        ../../../os/net/packetbuf.c
+Message:  CC        ../../../os/net/netstack.c
+Message:  CC        ../../../os/net/linkaddr.c
+Message:  CC        ../../../os/net/net-debug.c
+Message:  CC        ../../../os/net/link-stats.c
+Message:  CC        ../../../os/net/mac/mac.c
+Message:  CC        ../../../os/net/mac/mac-sequence.c
+Message:  CC        ../../../os/net/mac/framer/frame802154e-ie.c
+Message:  CC        ../../../os/net/mac/framer/framer-802154.c
+Message:  CC        ../../../os/net/mac/framer/nullframer.c
+Message:  CC        ../../../os/net/mac/csma/anti-replay.c
+Message:  CC        ../../../os/net/mac/framer/frame802154.c
+Message:  CC        ../../../os/net/mac/csma/csma-security.c
+Message:  CC        ../../../os/net/mac/csma/csma.c
+Message:  CC        ../../../os/net/mac/csma/csma-output.c
+Message:  CC        ../../../os/net/mac/csma/ccm-star-packetbuf.c
+Message:  CC        ../../../os/net/ipv6/uipbuf.c
+Message:  CC        ../../../os/net/ipv6/uip-icmp6.c
+Message:  CC        ../../../os/net/ipv6/uip-sr.c
+Message:  CC        ../../../os/net/ipv6/uip-ds6.c
+Message:  CC        ../../../os/net/ipv6/uip-packetqueue.c
+Message:  CC        ../../../os/net/ipv6/tcp-socket.c
+Message:  CC        ../../../os/net/ipv6/ip64-addr.c
+Message:  CC        ../../../os/net/ipv6/uip-ds6-route.c
+Message:  CC        ../../../os/net/ipv6/uip-udp-packet.c
+Message:  CC        ../../../os/net/ipv6/psock.c
+Message:  CC        ../../../os/net/ipv6/uip6.c
+Message:  CC        ../../../os/net/ipv6/tcpip.c
+Message:  CC        ../../../os/net/ipv6/uip-nameserver.c
+Message:  CC        ../../../os/net/ipv6/uip-ds6-nbr.c
+Message:  CC        ../../../os/net/ipv6/udp-socket.c
+Message:  CC        ../../../os/net/ipv6/uip-nd6.c
+Message:  CC        ../../../os/net/ipv6/simple-udp.c
+Message:  CC        ../../../os/net/ipv6/sicslowpan.c
+Message:  CC        ../../../os/net/ipv6/uiplib.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-icmp6.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-of0.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-neighbor.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-dag.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-timers.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-ext-header.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-dag-root.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-mrhof.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-nbr-policy.c
+Message:mv platform.o build/cooja/mtype688.o
+Message:ar rcf build/cooja/mtype688.a build/cooja/obj/simEnvChange.o build/cooja/obj/cooja_mt.o build/cooja/obj/cooja_mtarch.o build/cooja/obj/rtimer-arch.o build/cooja/obj/slip.o build/cooja/obj/watchdog.o build/cooja/obj/int-master.o build/cooja/obj/beep.o build/cooja/obj/ip.o build/cooja/obj/leds-arch.o build/cooja/obj/moteid.o build/cooja/obj/pir-sensor.o build/cooja/obj/rs232.o build/cooja/obj/vib-sensor.o build/cooja/obj/clock.o build/cooja/obj/cooja-log.o build/cooja/obj/cfs-cooja.o build/cooja/obj/cooja-radio.o build/cooja/obj/eeprom.o build/cooja/obj/slip-arch.o build/cooja/obj/random.o build/cooja/obj/sensors.o build/cooja/obj/leds.o build/cooja/obj/gpio-hal-arch.o build/cooja/obj/buttons.o build/cooja/obj/contiki-main.o build/cooja/obj/autostart.o build/cooja/obj/ctimer.o build/cooja/obj/energest.o build/cooja/obj/etimer.o build/cooja/obj/log.o build/cooja/obj/mutex.o build/cooja/obj/stimer.o build/cooja/obj/compower.o build/cooja/obj/atomic.o build/cooja/obj/rtimer.o build/cooja/obj/node-id.o build/cooja/obj/process.o build/cooja/obj/timer.o build/cooja/obj/stack-check.o build/cooja/obj/dbl-circ-list.o build/cooja/obj/crc16.o build/cooja/obj/ifft.o build/cooja/obj/trickle-timer.o build/cooja/obj/ccm-star.o build/cooja/obj/dbl-list.o build/cooja/obj/ringbufindex.o build/cooja/obj/list.o build/cooja/obj/circular-list.o build/cooja/obj/aes-128.o build/cooja/obj/memb.o build/cooja/obj/heapmem.o build/cooja/obj/hexconv.o build/cooja/obj/assert.o build/cooja/obj/ringbuf.o build/cooja/obj/button-hal.o build/cooja/obj/serial-line.o build/cooja/obj/spi.o build/cooja/obj/nullradio.o build/cooja/obj/gpio-hal.o build/cooja/obj/queuebuf.o build/cooja/obj/nbr-table.o build/cooja/obj/packetbuf.o build/cooja/obj/netstack.o build/cooja/obj/linkaddr.o build/cooja/obj/net-debug.o build/cooja/obj/link-stats.o build/cooja/obj/mac-sequence.o build/cooja/obj/mac.o build/cooja/obj/frame802154e-ie.o build/cooja/obj/framer-802154.o build/cooja/obj/nullframer.o build/cooja/obj/frame802154.o build/cooja/obj/csma-security.o build/cooja/obj/anti-replay.o build/cooja/obj/csma.o build/cooja/obj/csma-output.o build/cooja/obj/ccm-star-packetbuf.o build/cooja/obj/uipbuf.o build/cooja/obj/uip-icmp6.o build/cooja/obj/uip-sr.o build/cooja/obj/uip-ds6.o build/cooja/obj/uip-packetqueue.o build/cooja/obj/tcp-socket.o build/cooja/obj/ip64-addr.o build/cooja/obj/uip-udp-packet.o build/cooja/obj/uip-ds6-route.o build/cooja/obj/psock.o build/cooja/obj/tcpip.o build/cooja/obj/uip6.o build/cooja/obj/uip-ds6-nbr.o build/cooja/obj/uip-nameserver.o build/cooja/obj/uip-nd6.o build/cooja/obj/udp-socket.o build/cooja/obj/simple-udp.o build/cooja/obj/sicslowpan.o build/cooja/obj/uiplib.o build/cooja/obj/rpl-icmp6.o build/cooja/obj/rpl-of0.o build/cooja/obj/rpl-neighbor.o build/cooja/obj/rpl-dag.o build/cooja/obj/rpl-timers.o build/cooja/obj/rpl-ext-header.o build/cooja/obj/rpl.o build/cooja/obj/rpl-nbr-policy.o build/cooja/obj/rpl-mrhof.o build/cooja/obj/rpl-dag-root.o 
+Message:Redefining printf
+Message:objcopy --redefine-sym printf=log_printf root-node.o;   objcopy --redefine-sym printf=log_printf build/cooja/mtype688.o;   objcopy --redefine-sym printf=log_printf build/cooja/mtype688.a; 
+Message:objcopy --redefine-sym puts=log_puts root-node.o;   objcopy --redefine-sym puts=log_puts build/cooja/mtype688.o;   objcopy --redefine-sym puts=log_puts build/cooja/mtype688.a; 
+Message:objcopy --redefine-sym putchar=log_putchar root-node.o;   objcopy --redefine-sym putchar=log_putchar build/cooja/mtype688.o;   objcopy --redefine-sym putchar=log_putchar build/cooja/mtype688.a; 
+Message:gcc -I'/usr/lib/jvm/default-java/include' -I'/usr/lib/jvm/default-java/include/linux' -shared -Wl,-Map=build/cooja/mtype688.map -o build/cooja/mtype688.cooja root-node.o build/cooja/mtype688.o build/cooja/mtype688.a 
+Message:cp build/cooja/mtype688.cooja root-node.cooja
+Message:rm root-node.o
+ INFO [main] (ContikiMoteType.java:406) - Creating core communicator between Java class Lib2 and Contiki library '/home/user/contiki-ng/tests/14-rpl-lite/code/build/cooja/mtype688.cooja'
+ INFO [main] (ContikiMoteType.java:580) - Parsed section at 0x31020 ( 900 == 0x384 bytes)
+ INFO [main] (ContikiMoteType.java:580) - Parsed section at 0x313c0 ( 81124 == 0x13ce4 bytes)
+ INFO [main] (ContikiMoteType.java:502) - mtype688.cooja: offsetting Cooja mote address space: 0xa53ba000
+ INFO [main] (ContikiMoteType.java:580) - Parsed section at 0xa53eb020 ( 900 == 0x384 bytes)
+ INFO [main] (ContikiMoteType.java:580) - Parsed section at 0xa53eb3c0 ( 81124 == 0x13ce4 bytes)
+ INFO [main] (CompileContiki.java:140) - > make TARGET=cooja clean 
+Message:
+Message:> make TARGET=cooja clean 
+Message:Target cooja cleaned
+ INFO [main] (CompileContiki.java:140) - > make -j receiver-node.cooja TARGET=cooja 
+Message:
+Message:> make -j receiver-node.cooja TARGET=cooja 
+Message:  CC        receiver-node.c
+Message:  CC        ../../../arch/platform/cooja/./platform.c
+Message:  MKDIR     build/cooja/obj
+Message:  CC        ../../../arch/platform/cooja/./int-master.c
+Message:  CC        ../../../arch/platform/cooja/dev/watchdog.c
+Message:  CC        ../../../arch/platform/cooja/dev/beep.c
+Message:  CC        ../../../arch/platform/cooja/sys/cooja_mt.c
+Message:  CC        ../../../arch/platform/cooja/dev/leds-arch.c
+Message:  CC        ../../../arch/platform/cooja/dev/vib-sensor.c
+Message:  CC        ../../../arch/platform/cooja/dev/rs232.c
+Message:  CC        ../../../arch/platform/cooja/dev/moteid.c
+Message:  CC        ../../../arch/platform/cooja/dev/ip.c
+Message:  CC        ../../../arch/platform/cooja/dev/pir-sensor.c
+Message:  CC        ../../../os/dev/slip.c
+Message:  CC        ../../../arch/platform/cooja/sys/clock.c
+Message:  CC        ../../../arch/platform/cooja/./rtimer-arch.c
+Message:  CC        ../../../arch/platform/cooja/sys/cooja-log.c
+Message:  CC        ../../../arch/platform/cooja/cfs/cfs-cooja.c
+Message:  CC        ../../../arch/platform/cooja/dev/cooja-radio.c
+Message:  CC        ../../../arch/platform/cooja/dev/eeprom.c
+Message:  CC        ../../../arch/platform/cooja/dev/buttons.c
+Message:  CC        ../../../arch/platform/cooja/./slip-arch.c
+Message:  CC        ../../../arch/platform/cooja/dev/gpio-hal-arch.c
+Message:  CC        ../../../os/lib/random.c
+Message:  CC        ../../../os/dev/leds.c
+Message:  CC        ../../../os/contiki-main.c
+Message:  CC        ../../../os/lib/sensors.c
+Message:  CC        ../../../arch/platform/cooja/lib/simEnvChange.c
+Message:  CC        ../../../arch/platform/cooja/sys/cooja_mtarch.c
+Message:  CC        ../../../os/sys/ctimer.c
+Message:  CC        ../../../os/sys/energest.c
+Message:  CC        ../../../os/sys/etimer.c
+Message:  CC        ../../../os/sys/log.c
+Message:  CC        ../../../os/sys/autostart.c
+Message:  CC        ../../../os/sys/mutex.c
+Message:  CC        ../../../os/sys/stimer.c
+Message:  CC        ../../../os/sys/atomic.c
+Message:  CC        ../../../os/sys/compower.c
+Message:  CC        ../../../os/sys/rtimer.c
+Message:  CC        ../../../os/sys/node-id.c
+Message:  CC        ../../../os/sys/process.c
+Message:  CC        ../../../os/lib/dbl-circ-list.c
+Message:  CC        ../../../os/lib/crc16.c
+Message:  CC        ../../../os/lib/trickle-timer.c
+Message:  CC        ../../../os/sys/timer.c
+Message:  CC        ../../../os/lib/ifft.c
+Message:  CC        ../../../os/sys/stack-check.c
+Message:  CC        ../../../os/lib/ccm-star.c
+Message:  CC        ../../../os/lib/dbl-list.c
+Message:  CC        ../../../os/lib/ringbufindex.c
+Message:  CC        ../../../os/lib/list.c
+Message:  CC        ../../../os/lib/circular-list.c
+Message:  CC        ../../../os/lib/aes-128.c
+Message:  CC        ../../../os/lib/memb.c
+Message:  CC        ../../../os/lib/heapmem.c
+Message:  CC        ../../../os/dev/serial-line.c
+Message:  CC        ../../../os/dev/spi.c
+Message:  CC        ../../../os/lib/assert.c
+Message:  CC        ../../../os/lib/ringbuf.c
+Message:  CC        ../../../os/lib/hexconv.c
+Message:  CC        ../../../os/dev/button-hal.c
+Message:  CC        ../../../os/dev/nullradio.c
+Message:  CC        ../../../os/dev/gpio-hal.c
+Message:  CC        ../../../os/net/nbr-table.c
+Message:  CC        ../../../os/net/packetbuf.c
+Message:  CC        ../../../os/net/queuebuf.c
+Message:  CC        ../../../os/net/netstack.c
+Message:  CC        ../../../os/net/linkaddr.c
+Message:  CC        ../../../os/net/net-debug.c
+Message:  CC        ../../../os/net/link-stats.c
+Message:  CC        ../../../os/net/mac/mac.c
+Message:  CC        ../../../os/net/mac/mac-sequence.c
+Message:  CC        ../../../os/net/mac/framer/frame802154e-ie.c
+Message:  CC        ../../../os/net/mac/framer/framer-802154.c
+Message:  CC        ../../../os/net/mac/framer/nullframer.c
+Message:  CC        ../../../os/net/mac/framer/frame802154.c
+Message:  CC        ../../../os/net/mac/csma/csma-security.c
+Message:  CC        ../../../os/net/mac/csma/anti-replay.c
+Message:  CC        ../../../os/net/mac/csma/csma.c
+Message:  CC        ../../../os/net/mac/csma/csma-output.c
+Message:  CC        ../../../os/net/mac/csma/ccm-star-packetbuf.c
+Message:  CC        ../../../os/net/ipv6/uipbuf.c
+Message:  CC        ../../../os/net/ipv6/uip-icmp6.c
+Message:  CC        ../../../os/net/ipv6/uip-sr.c
+Message:  CC        ../../../os/net/ipv6/uip-ds6.c
+Message:  CC        ../../../os/net/ipv6/uip-packetqueue.c
+Message:  CC        ../../../os/net/ipv6/tcp-socket.c
+Message:  CC        ../../../os/net/ipv6/uip-udp-packet.c
+Message:  CC        ../../../os/net/ipv6/uip-ds6-route.c
+Message:  CC        ../../../os/net/ipv6/ip64-addr.c
+Message:  CC        ../../../os/net/ipv6/psock.c
+Message:  CC        ../../../os/net/ipv6/uip6.c
+Message:  CC        ../../../os/net/ipv6/tcpip.c
+Message:  CC        ../../../os/net/ipv6/uip-ds6-nbr.c
+Message:  CC        ../../../os/net/ipv6/uip-nameserver.c
+Message:  CC        ../../../os/net/ipv6/uip-nd6.c
+Message:  CC        ../../../os/net/ipv6/simple-udp.c
+Message:  CC        ../../../os/net/ipv6/udp-socket.c
+Message:  CC        ../../../os/net/ipv6/sicslowpan.c
+Message:  CC        ../../../os/net/ipv6/uiplib.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-icmp6.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-of0.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-neighbor.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-dag.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-timers.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-nbr-policy.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-ext-header.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-mrhof.c
+Message:  CC        ../../../os/net/routing/rpl-lite/rpl-dag-root.c
+Message:mv platform.o build/cooja/mtype296.o
+Message:ar rcf build/cooja/mtype296.a build/cooja/obj/simEnvChange.o build/cooja/obj/cooja_mt.o build/cooja/obj/cooja_mtarch.o build/cooja/obj/rtimer-arch.o build/cooja/obj/slip.o build/cooja/obj/watchdog.o build/cooja/obj/int-master.o build/cooja/obj/beep.o build/cooja/obj/ip.o build/cooja/obj/leds-arch.o build/cooja/obj/moteid.o build/cooja/obj/pir-sensor.o build/cooja/obj/rs232.o build/cooja/obj/vib-sensor.o build/cooja/obj/clock.o build/cooja/obj/cooja-log.o build/cooja/obj/cfs-cooja.o build/cooja/obj/cooja-radio.o build/cooja/obj/eeprom.o build/cooja/obj/slip-arch.o build/cooja/obj/random.o build/cooja/obj/sensors.o build/cooja/obj/leds.o build/cooja/obj/gpio-hal-arch.o build/cooja/obj/buttons.o build/cooja/obj/contiki-main.o build/cooja/obj/autostart.o build/cooja/obj/ctimer.o build/cooja/obj/energest.o build/cooja/obj/etimer.o build/cooja/obj/log.o build/cooja/obj/mutex.o build/cooja/obj/stimer.o build/cooja/obj/compower.o build/cooja/obj/atomic.o build/cooja/obj/rtimer.o build/cooja/obj/node-id.o build/cooja/obj/process.o build/cooja/obj/timer.o build/cooja/obj/stack-check.o build/cooja/obj/dbl-circ-list.o build/cooja/obj/crc16.o build/cooja/obj/ifft.o build/cooja/obj/trickle-timer.o build/cooja/obj/ccm-star.o build/cooja/obj/dbl-list.o build/cooja/obj/ringbufindex.o build/cooja/obj/list.o build/cooja/obj/circular-list.o build/cooja/obj/aes-128.o build/cooja/obj/memb.o build/cooja/obj/heapmem.o build/cooja/obj/hexconv.o build/cooja/obj/assert.o build/cooja/obj/ringbuf.o build/cooja/obj/button-hal.o build/cooja/obj/serial-line.o build/cooja/obj/spi.o build/cooja/obj/nullradio.o build/cooja/obj/gpio-hal.o build/cooja/obj/queuebuf.o build/cooja/obj/nbr-table.o build/cooja/obj/packetbuf.o build/cooja/obj/netstack.o build/cooja/obj/linkaddr.o build/cooja/obj/net-debug.o build/cooja/obj/link-stats.o build/cooja/obj/mac-sequence.o build/cooja/obj/mac.o build/cooja/obj/frame802154e-ie.o build/cooja/obj/framer-802154.o build/cooja/obj/nullframer.o build/cooja/obj/frame802154.o build/cooja/obj/csma-security.o build/cooja/obj/anti-replay.o build/cooja/obj/csma.o build/cooja/obj/csma-output.o build/cooja/obj/ccm-star-packetbuf.o build/cooja/obj/uipbuf.o build/cooja/obj/uip-icmp6.o build/cooja/obj/uip-sr.o build/cooja/obj/uip-ds6.o build/cooja/obj/uip-packetqueue.o build/cooja/obj/tcp-socket.o build/cooja/obj/ip64-addr.o build/cooja/obj/uip-udp-packet.o build/cooja/obj/uip-ds6-route.o build/cooja/obj/psock.o build/cooja/obj/tcpip.o build/cooja/obj/uip6.o build/cooja/obj/uip-ds6-nbr.o build/cooja/obj/uip-nameserver.o build/cooja/obj/uip-nd6.o build/cooja/obj/udp-socket.o build/cooja/obj/simple-udp.o build/cooja/obj/sicslowpan.o build/cooja/obj/uiplib.o build/cooja/obj/rpl-icmp6.o build/cooja/obj/rpl-of0.o build/cooja/obj/rpl-neighbor.o build/cooja/obj/rpl-dag.o build/cooja/obj/rpl-timers.o build/cooja/obj/rpl-ext-header.o build/cooja/obj/rpl.o build/cooja/obj/rpl-nbr-policy.o build/cooja/obj/rpl-mrhof.o build/cooja/obj/rpl-dag-root.o 
+Message:Redefining printf
+Message:objcopy --redefine-sym printf=log_printf receiver-node.o;   objcopy --redefine-sym printf=log_printf build/cooja/mtype296.o;   objcopy --redefine-sym printf=log_printf build/cooja/mtype296.a; 
+Message:objcopy --redefine-sym puts=log_puts receiver-node.o;   objcopy --redefine-sym puts=log_puts build/cooja/mtype296.o;   objcopy --redefine-sym puts=log_puts build/cooja/mtype296.a; 
+Message:objcopy --redefine-sym putchar=log_putchar receiver-node.o;   objcopy --redefine-sym putchar=log_putchar build/cooja/mtype296.o;   objcopy --redefine-sym putchar=log_putchar build/cooja/mtype296.a; 
+Message:gcc -I'/usr/lib/jvm/default-java/include' -I'/usr/lib/jvm/default-java/include/linux' -shared -Wl,-Map=build/cooja/mtype296.map -o build/cooja/mtype296.cooja receiver-node.o build/cooja/mtype296.o build/cooja/mtype296.a 
+Message:cp build/cooja/mtype296.cooja receiver-node.cooja
+Message:rm receiver-node.o
+ INFO [main] (ContikiMoteType.java:406) - Creating core communicator between Java class Lib3 and Contiki library '/home/user/contiki-ng/tests/14-rpl-lite/code/build/cooja/mtype296.cooja'
+ INFO [main] (ContikiMoteType.java:580) - Parsed section at 0x31020 ( 900 == 0x384 bytes)
+ INFO [main] (ContikiMoteType.java:580) - Parsed section at 0x313c0 ( 81156 == 0x13d04 bytes)
+ INFO [main] (ContikiMoteType.java:502) - mtype296.cooja: offsetting Cooja mote address space: 0xa5374000
+ INFO [main] (ContikiMoteType.java:580) - Parsed section at 0xa53a5020 ( 900 == 0x384 bytes)
+ INFO [main] (ContikiMoteType.java:580) - Parsed section at 0xa53a53c0 ( 81156 == 0x13d04 bytes)
+ INFO [main] (ContikiRadio.java:397) - Radio bitrate reconfigured to (kbps): 250.0
+ INFO [main] (ContikiRadio.java:397) - Radio bitrate reconfigured to (kbps): 250.0
+ INFO [main] (ContikiRadio.java:397) - Radio bitrate reconfigured to (kbps): 250.0
+ INFO [main] (ContikiRadio.java:397) - Radio bitrate reconfigured to (kbps): 250.0
+ INFO [main] (ContikiRadio.java:397) - Radio bitrate reconfigured to (kbps): 250.0
+ INFO [main] (ContikiRadio.java:397) - Radio bitrate reconfigured to (kbps): 250.0
+ INFO [main] (ContikiRadio.java:397) - Radio bitrate reconfigured to (kbps): 250.0
+ INFO [main] (ContikiRadio.java:397) - Radio bitrate reconfigured to (kbps): 250.0
+ INFO [main] (Cooja.java:1782) - Visualized plugin was not started: class org.contikios.cooja.plugins.SimControl
+ INFO [main] (Cooja.java:1782) - Visualized plugin was not started: class org.contikios.cooja.plugins.Visualizer
+ INFO [main] (Cooja.java:1782) - Visualized plugin was not started: class org.contikios.cooja.plugins.LogListener
+ INFO [main] (Cooja.java:1782) - Visualized plugin was not started: class org.contikios.cooja.plugins.Notes
+ INFO [main] (ScriptRunner.java:430) - Test script deactivated
+ INFO [main] (LogScriptEngine.java:265) - Script timeout in 1000000 ms
+ INFO [main] (ScriptRunner.java:387) - Test script activated
+ INFO [Thread-2] (Simulation.java:253) - Simulation main loop started, system time: 1598146151303
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 5.00%, done in 20.0 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 10.00%, done in 13.0 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 15.00%, done in 9.2 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 20.00%, done in 6.8 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 25.00%, done in 5.4 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 30.00%, done in 4.3 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 35.00%, done in 3.5 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 40.00%, done in 2.8 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 45.00%, done in 2.4 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 50.00%, done in 2.0 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 55.00%, done in 1.7 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 60.00%, done in 1.4 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 65.00%, done in 1.2 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 70.00%, done in 0.9 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 75.00%, done in 0.7 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 80.00%, done in 0.6 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 85.00%, done in 0.4 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 90.00%, done in 0.3 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 95.00%, done in 0.1 sec
+ INFO [Thread-2] (LogScriptEngine.java:375) - Timeout event @ 1000000000
+ INFO [Thread-1] (LogScriptEngine.java:309) - Test script finished
+ INFO [Thread-2] (Simulation.java:312) - Simulation main loop stopped, system time: 1598146153729	Duration: 2426 ms	Simulated time 1000000 ms	Ratio 412.20115416323165
+ INFO [AWT-EventQueue-0] (ScriptRunner.java:430) - Test script deactivated
